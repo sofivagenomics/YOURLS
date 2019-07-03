@@ -211,6 +211,9 @@ class Config {
         } else {
             error_reporting( E_ERROR | E_PARSE );
         }
+        
+        //Private or not
+        define( 'YOURLS_PRIVATE', false ); //this is public
     }
 
 }
