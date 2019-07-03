@@ -52,7 +52,6 @@ if ($query) {
 	//	echo '<a href="' . $query_result->url . '">'. $query_result->url . '</a>';
 	//	echo '</td></tr>';
 	//}
-	echo '</table>';
     
 	foreach( $query as $query_result ) {
 		echo '<tr><td>';
