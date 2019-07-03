@@ -115,4 +115,3 @@ include 'pages/linkslist.php';
 
 // Display page footer
 yourls_html_footer();
-?>
