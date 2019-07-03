@@ -26,7 +26,7 @@ if( !defined( 'YOURLS_ABSPATH' ) ) {
 }
 
 // Display page content. Any PHP, HTML and YOURLS function can go here.
-$url = YOURLS_SITE . '/linkslist';
+$url = YOURLS_SITE . '/';
 
 yourls_html_head( 'linkslist', 'Basic List of Links' );
 
