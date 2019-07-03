@@ -26,7 +26,7 @@ if( !defined( 'YOURLS_ABSPATH' ) ) {
 }
 
 // Display page content. Any PHP, HTML and YOURLS function can go here.
-$url = YOURLS_SITE . '/all';
+$url = YOURLS_SITE . '/linkslist';
 
 yourls_html_head( 'linkslist', 'Basic List of Links' );
 
@@ -44,13 +44,22 @@ $query = $ydb->get_results("SELECT url, keyword, timestamp FROM `$table_url` ord
 if ($query) {
 	echo '<table><thead><tr><th>Keyword</th><th>URL</th></tr></thead>';
 
+	//foreach( $query as $query_result ) {
+	//	echo '<tr><td>';
+	//	echo $query_result->keyword;
+	//	echo '</td><td>';
+	//	echo '<a href="' . $query_result->url . '">'. $query_result->url . '</a>';
+	//	echo '</td></tr>';
+	//}
+	echo '</table>';
+    
 	foreach( $query as $query_result ) {
 		echo '<tr><td>';
         echo YOURLS_SITE;
         echo '/';
 		echo $query_result->keyword;
 		echo '</td><td>';
-		echo '<a href="' . $query_result->url . '">'. $query_result->url . '</a>';
+		echo $query_result->url;
 		echo '</td></tr>';
 	}
 	echo '</table>';
