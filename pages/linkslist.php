@@ -57,6 +57,6 @@ if ($query) {
 }
 
 list_links_table(1000); // change from 1000 to whatever number of links you desire
-yourls_html_footer();
+// yourls_html_footer();
 
 ?>
