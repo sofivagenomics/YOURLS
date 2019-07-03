@@ -105,12 +105,6 @@ HTML;
 
 </p>
 
-<h2>Please note</h2>
-
-<p>Be aware that a public interface <strong>will</strong> attract spammers. You are strongly advised to install anti spam plugins and any appropriate counter measure to deal with this issue.</p>
-
-
-<h2>Link List</h2>
 
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].'/includes/load-yourls.php' ;
@@ -120,4 +114,5 @@ include 'pages/linkslist.php';
 <?php
 
 // Display page footer
-yourls_html_footer();	
+yourls_html_footer();
+?>
