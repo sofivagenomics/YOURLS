@@ -51,6 +51,7 @@ if ($query) {
 		echo '<a href="' . $query_result->url . '">'. $query_result->url . '</a>';
 		echo '</td></tr>';
 	}else{
+        echo '<table><thead><tr><th>Keyword</th><th>URL</th></tr></thead>';
         echo '<tr><td>';
         echo 'There is no short link created, try to make one!!';
         echo '</td></tr>';
