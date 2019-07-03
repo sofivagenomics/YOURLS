@@ -45,7 +45,7 @@ if ($query) {
 	echo '<table><thead><tr><th>Keyword</th><th>URL</th></tr></thead>';
 
 	foreach( $query as $query_result ) {
-		echo '<tr><td>';
+		echo '<tr>YOURLS_SITE<td>';
 		echo $query_result->keyword;
 		echo '</td><td>';
 		echo '<a href="' . $query_result->url . '">'. $query_result->url . '</a>';
