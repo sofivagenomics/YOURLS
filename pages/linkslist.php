@@ -42,7 +42,8 @@ global $ydb;
 
 $query = $ydb->get_results("SELECT url, keyword, timestamp FROM `$table_url` order by timestamp desc limit $numlinks");
 if ($query) {
-	echo '<table><thead><tr><th>Keyword</th><th>URL</th></tr></thead>';
+	//echo '<table><thead><tr><th>Keyword</th><th>URL</th></tr></thead>';
+	echo '<table><thead><tr><th>ShortLink</th><th>URL</th></tr></thead>';
 
 	//foreach( $query as $query_result ) {
 	//	echo '<tr><td>';
